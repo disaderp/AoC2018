@@ -58,22 +58,22 @@ namespace AoC2018
 			int noCollisionID = 0;
 			foreach (Claim claim in claims)
 			{
-				//bool collision = false;
+				bool collision = false;
 				for (int i = claim.startX; i < claim.startX + claim.lengthX; i++)
 				{
 					for (int j = claim.startY; j < claim.startY + claim.lengthY; j++)
 					{
 						if (fabric[i, j] != claim.id)
 						{
-							//collision = true; //slower - 12ms
-							goto CONTINUEFOREACH; //faster - 2ms
+							collision = true; //slower - 12ms
+							//goto CONTINUEFOREACH; //faster - 2ms
 						}
 
 					}
 				}
-				//if (! collision)
+				if (! collision)
 				noCollisionID = claim.id;
-			CONTINUEFOREACH:;
+			//CONTINUEFOREACH:;
 			}
 			watch.Stop();
 			//PART2
