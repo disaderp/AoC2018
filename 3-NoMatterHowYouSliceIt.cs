@@ -15,10 +15,12 @@ namespace AoC2018
 			
 			int maxX = 0;
 			int maxY = 0;
-			while (Console.In.Peek() != -1)
+
+			var sr = new StreamReader("input3.txt");
+			while (sr.Peek() != -1)
 			{
 				Claim tmp = new Claim();
-				string[] claim = Console.ReadLine().Replace(":", "").Split(' ');
+				string[] claim = sr.ReadLine().Replace(":", "").Split(' ');
 				tmp.id = Int32.Parse(claim[0].Replace("#", ""));
 				tmp.startX = Int32.Parse(claim[2].Split(',')[0]);
 				tmp.startY = Int32.Parse(claim[2].Split(',')[1]);
@@ -71,8 +73,10 @@ namespace AoC2018
 
 					}
 				}
-				if (! collision)
-				noCollisionID = claim.id;
+				if (! collision){
+					noCollisionID = claim.id;
+					break;//only one possible
+				}
 			//CONTINUEFOREACH:;
 			}
 			watch.Stop();

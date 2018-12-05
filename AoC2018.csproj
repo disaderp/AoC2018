@@ -43,12 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="4ab.cs" />
-    <Content Include="3ab.cs" />
-    <Content Include="2b.cs" />
-    <Content Include="2a.cs" />
-    <Content Include="1b.cs" />
-    <Content Include="1a.cs" />
+    <Content Include="4-ReposeRecord.cs" />
+    <Content Include="3-NoMatterHowYouSliceIt.cs" />
+    <Content Include="2-InventoryManagementSystem.cs" />
+    <Content Include="1-ChronalCalibration.cs" />
+    <Content Include="5-AlchemicalReduction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

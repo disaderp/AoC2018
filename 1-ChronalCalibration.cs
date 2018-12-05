@@ -21,9 +21,17 @@ namespace AoC2018
 			var watch = System.Diagnostics.Stopwatch.StartNew();
 			while (sr.Peek() != -1)
 			{
-				input.Add(Int32.Parse(sr.ReadLine()));
+				int t = Int32.Parse(sr.ReadLine());
+				input.Add(t);
+				sum += t;
 			}
 
+			//PART1
+			Console.WriteLine(sum);
+			sum = 0;
+			//PART1
+
+			//PART2
 			while (true)
 			{
 				foreach(int number in input)
@@ -39,6 +47,7 @@ namespace AoC2018
 					freqList.Add(sum);
 				}
 			}
+			//PART2
 		}
 	}
 }
