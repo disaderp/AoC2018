@@ -49,6 +49,7 @@
     <Content Include="1-ChronalCalibration.cs" />
     <Content Include="5-AlchemicalReduction.cs" />
     <Content Include="6-ChronalCoordinates.cs" />
+    <Content Include="7-TheSumofItsParts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
