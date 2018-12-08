@@ -50,6 +50,7 @@
     <Content Include="5-AlchemicalReduction.cs" />
     <Content Include="6-ChronalCoordinates.cs" />
     <Content Include="7-TheSumofItsParts.cs" />
+    <Content Include="8-MemoryManeuver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
