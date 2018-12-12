@@ -54,6 +54,8 @@
     <Content Include="08-MemoryManeuver.cs" />
     <Content Include="09-MarbleMania.cs" />
     <Content Include="10-TheStarsAlign.cs" />
+    <Content Include="11-ChronalCharge.cs" />
+    <Content Include="12-SubterraneanSustainability.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
