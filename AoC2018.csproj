@@ -57,6 +57,7 @@
     <Content Include="11-ChronalCharge.cs" />
     <Content Include="12-SubterraneanSustainability.cs" />
     <Content Include="13-MineCartMadness.cs" />
+    <Compile Include="14-ChocolateCharts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
