@@ -51,6 +51,10 @@ namespace AoC2018
 
 					if(units.Exists(x => x.hp <= 0))
 					{
+						if(units.FindIndex(x => x.hp <= 0) > i)
+						{
+							i++;//element > i -> can cause double turn
+						}
 						units.Remove(units.Find(x => x.hp <= 0));
 						i--;
 					}
@@ -82,8 +86,11 @@ namespace AoC2018
 			//PART2
 			int dmg = 4;
 			bool ending = true;
+			Console.SetCursorPosition(0, 32);
 			while (ending)
 			{
+				Console.WriteLine();
+				Console.WriteLine("Elf dmg: " + dmg);
 				units.Clear();
 				foreach(Unit x in unitsCopy)
 				{
@@ -108,6 +115,10 @@ namespace AoC2018
 
 						if (units.Exists(x => x.hp <= 0))
 						{
+							if (units.FindIndex(x => x.hp <= 0) > i)
+							{
+								i++;//element > i -> can cause double turn
+							}
 							if (!units.Find(x => x.hp <= 0).team) nelfDeath = false;//elf died, restart game
 							units.Remove(units.Find(x => x.hp <= 0));
 							i--;
@@ -131,6 +142,8 @@ namespace AoC2018
 					}
 					if (teamWon)
 					{
+						Console.WriteLine();
+						Console.WriteLine();
 						Console.WriteLine(hpLeft * j);
 						ending = false;
 						break;
@@ -142,7 +155,8 @@ namespace AoC2018
 
 		static void print()
 		{
-			Console.Clear();
+			//Console.Clear();
+			Console.SetCursorPosition(0, 0);
 			for(int i = 0; i < 32; i++)
 			{
 				for(int j = 0; j < 32; j++)
