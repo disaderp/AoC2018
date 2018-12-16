@@ -62,6 +62,7 @@
     <Content Include="13-MineCartMadness.cs" />
     <Content Include="15-BeverageBandits.cs" />
     <Content Include="14-ChocolateCharts.cs" />
+    <Content Include="16-ChronalClassification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
